@@ -84,7 +84,39 @@
         <!-- navbar area -->
 
     </header>
-    <div id="sawo-container" style="height: 300px; width: 300px; margin-left:500px; border:20px;"></div>
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <div class="hero-content">
+                            <h1 class="wow fadeInUp" data-wow-delay=".2s">
+                                One Step Solution For Your Health
+                            </h1>
+                            <p class="wow fadeInUp" data-wow-delay=".4s" style="font-size:30px;font-weight: bolder">
+                              You are here as?
+                            </p>
+                            
+                            <div class="hero-btns">
+                                <button type="button" onclick="member('Doctor')"
+                                    class="main-btn btn-hover wow fadeInUp" data-wow-delay=".6s">Doctor</button>
+                                <button type="button" onclick="member('Patient')"
+                                    class="main-btn border-btn btn-hover wow fadeInUp" data-wow-delay=".6s">Patient</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <!-- <div class="hero-img wow fadeInUp" data-wow-delay=".5s">
+                            <img src="assets/img/hero/hero-img.png" alt="">
+                        </div> -->
+                        <div id="sawo-container" style="height: 600px; width: 500px;"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="hero-shape">
+                <img src="assets/img/hero/hero-shape-1.svg" alt="" class="shape shape-1">
+            </div> -->
+        </section>
+    <!-- <div id="sawo-container" style="height: 300px; width: 300px;"></div> -->
 
 </body>
 <script src="https://websdk.sawolabs.com/sawo.min.js"></script>
@@ -110,6 +142,11 @@
     };
     var sawo = new Sawo(config);
     sawo.showForm();
+
+    function member(a)
+    {
+        console.log(a);
+    }
 </script>
 
 </html>
