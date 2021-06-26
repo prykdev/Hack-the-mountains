@@ -1,0 +1,96 @@
+// download css
+
+.download-section {
+  position: relative;
+  z-index: 1;
+
+  .map-bg {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    bottom: 0;
+    @include transform(translateY(-50%));
+    left: 100px;
+  }
+
+  .download-shape {
+
+    .shape {
+      position: absolute;
+      z-index: -1;
+      right: 200px;
+      top: 50%;
+      @include transform(translateY(-50%));
+    }
+  }
+
+  .download-img {
+
+    img {
+      
+
+      @media #{$xs} {
+        width: 100%;
+      }
+    }
+  }
+
+
+
+  .download {
+    display: flex;
+    align-items: center;
+
+    li {
+
+      &:first-child {
+        margin-right: 20px;
+
+        a {
+          background: $theme-color;
+          color: $white;
+
+          .icon {
+            color: $white;
+          }
+          .text {
+            color: $white;
+
+            b {
+              color: $white;
+            }
+          }
+        }
+      }
+
+      a {
+        display: inline-flex;
+        background: $white;
+        border-radius: 10px;
+        padding: 15px 25px;
+        margin-bottom: 15px;
+        align-items: center;
+        @include box-shadow(0px 3px 23px rgba(210, 210, 210, 0.41));
+
+
+        .icon {
+          font-size: 30px;
+          color: $heading-color;
+          margin-right: 10px;
+        }
+
+        .text {
+          font-size: 10px;
+          color: $body-color;
+
+          b {
+            color: $heading-color;
+            font-size: 16px;
+            font-weight: 700;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

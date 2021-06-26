@@ -1,0 +1,41 @@
+// Font Family
+$font: 'Sen', sans-serif;
+$font-2: 'Hind Siliguri', sans-serif;
+
+
+// Colors ---------------
+$white: #fff;
+$black: #222;
+$gray: #F3FDFF;
+$rating: #E96A20;
+
+
+// Theme Color
+$theme-color: #4E6EF1;
+
+$border-color: #ddd;
+
+//Body Color
+$body-color: #5E678C;
+
+
+// Heading Color
+$heading-color: #1D2A5D;
+
+//gradient colors
+
+$gradient-1: linear-gradient(#b89cfe 0%, #624ff3 100%);
+$gradient-2: linear-gradient(#ff92a5 0%, #ff67a3 100%);
+$gradient-3: linear-gradient(#ffb37a 0%, #ff884a 100%);
+
+
+
+// Responsive Variables
+$desktop: 'only screen and (min-width: 1400px)';
+$laptop: 'only screen and (min-width: 1200px) and (max-width: 1399px)';
+$lg : 'only screen and (min-width: 992px) and (max-width: 1199px)';
+$md:'only screen and (min-width: 768px) and (max-width: 991px)';
+$xs:'(max-width: 767px)';
+$sm: 'only screen and (min-width: 480px) and (max-width: 767px)';
+
+

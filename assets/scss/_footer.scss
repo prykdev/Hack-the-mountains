@@ -1,0 +1,157 @@
+// footer css
+
+.footer {
+    position: relative;
+    z-index: 1;
+
+    .footer-shape {
+
+        .shape {
+            position: absolute;
+            z-index: -1;
+
+            &.shape-1 {
+                bottom: 0px;
+
+                @media #{$desktop} {
+                    left: -100px;
+                }
+
+                @media #{$laptop} {
+                    left: -350px;
+                }
+
+                @media #{$lg} {
+                    display: none;
+                }
+
+                @media #{$md} {
+                    display: none;
+                }
+
+                @media #{$sm} {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .widget-wrapper {
+
+        .footer-widget {
+            margin-bottom: 40px;
+
+            .logo {
+                margin-bottom: 30px;
+
+                .logo-1 {
+                    @media #{$desktop} {
+                        display: none;
+                    }
+                    @media #{$laptop} {
+                        display: none;
+                    }
+                }
+                .logo-2 {
+                    display: none;
+                    
+                    @media #{$laptop} {
+                        display: block;
+                    }
+                    @media #{$desktop} {
+                        display: block;
+                    }
+                }
+            }
+
+            p.desc {
+                padding-right: 100px;
+                margin-bottom: 35px;
+            }
+
+            h3 {
+                margin-top: 20px;
+                margin-bottom: 30px;
+            }
+
+            .socials {
+                display: flex;
+
+                li {
+                    margin-right: 20px;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+                    a {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 5px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background: rgba($white, .18);
+                        color: $white;
+
+                        @media #{$lg} {
+                            background: rgba($theme-color, .1);
+                            color: $body-color;
+                        }
+                        @media #{$md} {
+                            background: rgba($theme-color, .1);
+                            color: $body-color;
+                        }
+                        @media #{$xs} {
+                            background: rgba($theme-color, .1);
+                            color: $body-color;
+                        }
+
+
+                        &:hover {
+                            background: #ff67a3;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+
+            .links {
+
+                li {
+
+                    a {
+                        color: $body-color;
+                        line-height: 33px;
+
+                        &:hover {
+                            color: $theme-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .copy-right-wrapper {
+        border-top: 1px solid rgba($heading-color, .16);
+        padding: 25px;
+        text-align: center;
+
+        p {
+            font-size: 16px;
+
+            a {
+                color: $body-color;
+
+                &:hover {
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+
+
+
+}
+

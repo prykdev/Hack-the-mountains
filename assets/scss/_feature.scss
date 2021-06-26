@@ -1,0 +1,49 @@
+// feature css
+
+.feature-section {
+
+  .single-feature {
+    text-align: center;
+    padding: 30px;
+
+    @media #{$lg} {
+      padding: 30px 8px;
+    }
+
+    .icon {
+      width: 114px;
+      height: 114px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 75px;
+      color: $white;
+      margin: auto;
+      margin-bottom: 30px;
+      border-radius: 18px;
+
+      &.color-1 {
+        background: linear-gradient(#b89cfe 0%, #624ff3 100%);
+        @include box-shadow(0px 7px 10px rgba(110, 90, 245, 0.27));
+      }
+
+      &.color-2 {
+        background: linear-gradient(#ff92a5 0%, #ff67a3 100%);
+        @include box-shadow(0px 7px 10px rgba(255, 110, 163, 0.27));
+      }
+
+      &.color-3 {
+        background: linear-gradient(#ffb37a 0%, #ff884a 100%);
+        @include box-shadow(0px 7px 10px rgba(255, 142, 81, 0.27));        
+      }
+    }
+
+    .content {
+
+      h3 {
+        font-weight: 700;
+        margin-bottom: 25px;
+      }
+    }
+  }
+}
