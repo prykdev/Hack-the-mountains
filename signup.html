@@ -90,6 +90,7 @@ a {
                 </div>
             </div>
         </div> -->
+        
     <header class="header">
         <div class="navbar-area">
             <div class="container">
@@ -177,7 +178,7 @@ a {
                             <hr>
                             <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
                     
-                            <button type="submit" class="registerbtn">Register</button>
+                            <button type="submit" class="registerbtn" onclick="patpage()">Register</button>
                         </div>
                     
                         <div class="container signin">
@@ -187,41 +188,48 @@ a {
                 </div>
                 <div class="col-lg-12" id="doc" style="display: none;">
                     <form action="/action_page.php">
-                        <h3>Please fill in this form to create an account.</h3>
-                        <hr>
-                        <label for="fname"><b>Name</b></label>
-                        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>                        
-                        <label for="lname"><b>Last Name</b></label>
-                        <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
-                        <label for="email"><b>Email</b></label>
-                        <input type="text" placeholder="Enter Email" name="email" id="email" required>
-                        
-                        <label for="uname"><b>User Name</b></label>
-                        <input type="text" placeholder="Enter User Name" name="uname" id="uname" required>
-                        
-                        <label for="psw"><b>Password</b></label>
-                        <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-                                <label for="country"><b>specialization</b></label>
-                            
-                                <select id="spec" name="spec">
-                                    <option value="General-physicians">General physicians</option>
-                                    <option value="Consultant-physicians">Consultant physicians</option>
-                                    <option value="Gynecologists">Gynecologists</option>
-                                    <option value="Pediatricians">Pediatricians</option>
-                                    <option value="Dermatologists">Dermatologists</option>
-                                    <option value="ENT-Specialists">ENT-Specialists</option>
-                                    <option value="Nutritionists">Nutritionists</option>
-                                    <option value="Othropaedist">Othropaedist</option>
-                                    <option value="Psychologist">Psychologist</option>
-                                </select required>
-                            
-                        
-                                <label for="subject"><b>About you</b></label>
+                        <div class="container">
 
-                                <textarea id="subject" name="subject" placeholder="Write What you wou;d like the patients to know about you" style="height:200px" required></textarea>
+                            <h3>Please fill in this form to create an account.</h3>
+                            <hr>
+                            <label for="fname"><b>Name</b></label>
+                            <input type="text" id="fname" name="firstname" placeholder="Your name.." required>                        
+                            <label for="lname"><b>Last Name</b></label>
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+                            <label for="email"><b>Email</b></label>
+                            <input type="text" placeholder="Enter Email" name="email" id="email" required>
+                            
+                            <label for="uname"><b>User Name</b></label>
+                            <input type="text" placeholder="Enter User Name" name="uname" id="uname" required>
+                            
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+                            <label for="country"><b>specialization</b></label>
                         
-                            <input type="submit" value="Submit"class="main-btn btn-hover wow fadeInUp" data-wow-delay=".6s">
-               
+                            <select id="spec" name="spec">
+                                <option value="General-physicians">General physicians</option>
+                                <option value="Consultant-physicians">Consultant physicians</option>
+                                <option value="Gynecologists">Gynecologists</option>
+                                <option value="Pediatricians">Pediatricians</option>
+                                <option value="Dermatologists">Dermatologists</option>
+                                <option value="ENT-Specialists">ENT-Specialists</option>
+                                <option value="Nutritionists">Nutritionists</option>
+                                <option value="Othropaedist">Othropaedist</option>
+                                <option value="Psychologist">Psychologist</option>
+                            </select required>
+                            <label for="subject"><b>About you</b></label>
+                           <textarea id="subject" name="subject" placeholder="Write What you wou;d like the patients to know about you" style="height:200px" required></textarea>
+                            
+                                <!-- <input type="submit" value="Submit"class="main-btn btn-hover wow fadeInUp" data-wow-delay=".6s"> -->
+                                    <hr>
+                                    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                                    
+                                    <button type="submit" class="registerbtn" onclick="docpage()">Register</button>
+                                </div>
+                                
+                                <div class="container signin">
+                                    <p>Already have an account? <a href="http://127.0.0.1:5501/login.html">Log in</a>.</p>
+                                </div>
                     </form>
                 </div>
             </div>
@@ -233,4 +241,16 @@ a {
     <!-- <div id="sawo-container" style="height: 300px; width: 300px;"></div> -->
 
 </body>
+<script>
+    function patpage()
+    {
+        setTimeout(2000);
+        window.location.href = "http://127.0.0.1:5501/index.html";
+    }
+    function docpage()
+    {
+        setTimeout(2000);
+        window.location.href = "http://127.0.0.1:5501/docmain.html";
+    }
+</script>
 </html>
