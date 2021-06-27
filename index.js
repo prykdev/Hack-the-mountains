@@ -77,6 +77,7 @@ async function join() {
   console.log("publish success");
 }
 
+
 async function leave() {
   for (trackName in localTracks) {
     var track = localTracks[trackName];
@@ -99,7 +100,19 @@ async function leave() {
   $("#leave").attr("disabled", true);
   console.log("client leaves channel success");
 }
-
+    
+function member(a)
+{
+  if(a==="Doctor")
+  {
+    document.getElementById("pat").style.display = "none";
+    document.getElementById("doc").style.display = "block";
+  }else{
+    document.getElementById("doc").style.display = "none";
+    document.getElementById("pat").style.display = "block";
+  }
+}
+    
 async function subscribe(user, mediaType) {
   const uid = user.uid;
   // subscribe to a remote user
